@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="greeting">
+      <h2 class="title">
+        What's up, <input type="text" id="name" placeholder="Name here" />💪🏼
+      </h2>
+      <div class="auth-buttons">
+        <button class="signup-btn">Sign up</button>
+        <button class="signin-btn">Sign in</button>
+      </div>
+      <h5 class="date"></h5>
+    </section>
+    <div class="wrapper">
+      <div class="task-input">
+        <img src="../img/bars-icon.svg" alt="icon" class="icon" />
+        <input type="text" placeholder="Add a new task" />
+        <button class="add-btn">Add todo</button>
+      </div>
+      <div class="servers">
+        <button class="down-btn">Download</button>
+        <button class="up-btn">Upload</button>
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <script src="../JavaScripts/script.js" type="text/javascript"></script>
+  </body>
+</html>
