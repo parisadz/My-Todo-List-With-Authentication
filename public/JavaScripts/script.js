@@ -4,7 +4,17 @@ const taskInput = document.querySelector(".task-input input"),
   taskBox = document.querySelector(".task-box"),
   addBtn = document.querySelector(".add-btn"),
   downBtn = document.querySelector(".down-btn"),
-  upBtn = document.querySelector(".up-btn"),
+  uploadBtn = document.querySelector(".up-btn"),
+  inBtn = document.querySelector(".signin-btn"),
+  upBtn = document.querySelector(".signup-btn"),
+  usernameInput = document.querySelector(".username input"),
+  emailInput = document.querySelector(".email input"),
+  passwordInput = document.querySelector(".password input"),
+  signupBtn = document.querySelector(".SignUpForm-btn"),
+  signinBtn = document.querySelector(".SignInForm-btn"),
+  wrapper = document.querySelector(".wrapper"),
+  SignInForm = document.querySelector(".SignInForm"),
+  SignUpForm = document.querySelector(".SignUpForm"),
   dateEl = document.querySelector(".date"),
   nameInput = document.querySelector("#name"),
   username = localStorage.getItem("username") || "";
@@ -169,7 +179,7 @@ downBtn.addEventListener("click", (e) => {
     });
 });
 
-upBtn.addEventListener("click", (e) => {
+uploadBtn.addEventListener("click", (e) => {
   let newTodos = localStorage.getItem("todo-list");
 
   fetch("http://localhost:3000/database/upload", {
@@ -188,6 +198,18 @@ upBtn.addEventListener("click", (e) => {
     .catch(function (error) {
       console.warn("An error has occurred.", error);
     });
+});
+
+inBtn.addEventListener("click", () => {
+  wrapper.style.display = "none";
+  SignUpForm.style.display = "none";
+  SignInForm.style.display = "flex";
+});
+
+upBtn.addEventListener("click", () => {
+  wrapper.style.display = "none";
+  SignUpForm.style.display = "flex";
+  SignInForm.style.display = "none";
 });
 
 const date = new Date();

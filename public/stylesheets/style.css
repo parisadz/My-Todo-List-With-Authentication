@@ -118,8 +118,8 @@ button {
   padding: 28px 0;
   background: var(--purple);
   box-shadow: 12px 12px 2px 1px var(--purple-shadow);
-  display: none;
-  /* display: block; */
+  /* display: none; */
+  display: block;
 }
 
 .task-input {
@@ -306,7 +306,6 @@ li {
   padding: 28px 0;
   background: var(--purple);
   box-shadow: 12px 12px 2px 1px var(--purple-shadow);
-  /* display: flex; */
   flex-direction: column;
   display: none;
 }
@@ -359,9 +358,8 @@ li {
   padding: 28px 0;
   background: var(--purple);
   box-shadow: 12px 12px 2px 1px var(--purple-shadow);
-  display: flex;
   flex-direction: column;
-  /* display: none; */
+  display: none;
 }
 
 .SignInForm input {
