@@ -13,18 +13,20 @@
   </head>
   <body>
     <section class="greeting">
-      <h2 class="title">
-        What's up, <input type="text" id="name" placeholder="Name here" />💪🏼
-      </h2>
-      <div class="auth-buttons">
-        <button class="signup-btn">Sign up</button>
-        <button class="signin-btn">Sign in</button>
+      <div class="status">
+        <h2 class="title">
+          What's up, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+        <h5 class="date"></h5>
       </div>
-      <h5 class="date"></h5>
+      <div class="auth-buttons">
+        <button class="signin-btn">Sign in</button>
+        <button class="signup-btn">Sign up</button>
+      </div>
     </section>
     <div class="wrapper">
       <div class="task-input">
-        <img src="../img/bars-icon.svg" alt="icon" class="icon" />
+        <img src="../img/bars-icon.svg" alt="task icon" class="icon" />
         <input type="text" placeholder="Add a new task" />
         <button class="add-btn">Add todo</button>
       </div>
@@ -41,6 +43,32 @@
         <button class="clear-btn">Clear All</button>
       </div>
       <ul class="task-box"></ul>
+    </div>
+    <div class="SignUpForm">
+      <div class="username">
+        <img src="../img/username.png" alt="username icon" class="icon" />
+        <input type="text" placeholder="Enter Username" />
+      </div>
+      <div class="email">
+        <img src="../img/email.png" alt="email icon" class="icon" />
+        <input type="email" placeholder="Enter Email" />
+      </div>
+      <div class="password">
+        <img src="../img/password.png" alt="password icon" class="icon" />
+        <input type="password" placeholder="Enter Password" />
+      </div>
+      <button class="SignUpForm-btn">Sign up</button>
+    </div>
+    <div class="SignInForm">
+      <div class="email">
+        <img src="../img/email.png" alt="email icon" class="icon" />
+        <input type="email" placeholder="Enter Email" />
+      </div>
+      <div class="password">
+        <img src="../img/password.png" alt="password icon" class="icon" />
+        <input type="password" placeholder="Enter Password" />
+      </div>
+      <button class="SignInForm-btn">Sign in</button>
     </div>
     <script src="../JavaScripts/script.js" type="text/javascript"></script>
   </body>

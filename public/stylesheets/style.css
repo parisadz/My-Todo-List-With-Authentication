@@ -45,11 +45,14 @@ button {
 }
 
 .greeting {
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .greeting .title {
   display: flex;
+  align-items: center;
 }
 
 .greeting .title input {
@@ -67,17 +70,22 @@ button {
   color: var(--dark);
   font-size: 1.5rem;
   font-weight: 700;
+  visibility: hidden;
+}
+
+.greeting .status {
+  display: flex;
+  align-items: center;
+  visibility: hidden;
 }
 
 .date {
   color: var(--dark);
 }
 
-.signs-btn {
-  /* width: 200px; */
+.auth-buttons {
   display: flex;
-  align-self: flex-end;
-  justify-content: right;
+  align-items: center;
 }
 
 .signup-btn {
@@ -90,6 +98,7 @@ button {
 
 .signin-btn {
   width: 80px;
+  margin-right: 10px;
 }
 
 .signin-btn:hover {
@@ -109,6 +118,8 @@ button {
   padding: 28px 0;
   background: var(--purple);
   box-shadow: 12px 12px 2px 1px var(--purple-shadow);
+  display: none;
+  /* display: block; */
 }
 
 .task-input {
@@ -285,6 +296,103 @@ li {
 }
 .task-menu li i {
   padding-right: 8px;
+}
+
+.SignUpForm {
+  max-width: 505px;
+  margin: 90px auto;
+  background: var(--white);
+  border-radius: 7px;
+  padding: 28px 0;
+  background: var(--purple);
+  box-shadow: 12px 12px 2px 1px var(--purple-shadow);
+  /* display: flex; */
+  flex-direction: column;
+  display: none;
+}
+
+.username,
+.email,
+.password {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.SignUpForm input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 0 20px 0 53px;
+}
+
+.SignUpForm img {
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
+}
+
+.SignUpForm input::placeholder {
+  color: var(--grey);
+}
+
+.SignUpForm-btn {
+  padding: 7px 13px;
+  margin-top: 10px;
+  width: 455px;
+  align-self: center;
+}
+
+.SignUpForm-btn:hover {
+  background: var(--dark);
+}
+
+.SignInForm {
+  max-width: 505px;
+  margin: 90px auto;
+  background: var(--white);
+  border-radius: 7px;
+  padding: 28px 0;
+  background: var(--purple);
+  box-shadow: 12px 12px 2px 1px var(--purple-shadow);
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+}
+
+.SignInForm input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 0 20px 0 53px;
+}
+
+.SignInForm img {
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
+}
+
+.SignInForm input::placeholder {
+  color: var(--grey);
+}
+
+.SignInForm-btn {
+  padding: 7px 13px;
+  margin-top: 10px;
+  width: 455px;
+  align-self: center;
+}
+
+.SignInForm-btn:hover {
+  background: var(--dark);
 }
 
 @media only screen and (max-width: 500px) {
