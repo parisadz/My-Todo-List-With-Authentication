@@ -1,6 +1,1 @@
-[
-  {
-    "username": "admin",
-    "password": "admin"
-  }
-]
+[{"username":"admin","password":"admin"},{"name":"test","username":"testuser","email":"testemail#gmail.com","password":"testpass","todos":[],"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZW1haWwiOiJ0ZXN0ZW1haWwjZ21haWwuY29tIiwiaWF0IjoxNjg5OTU2NTAyfQ.RyB_nb4wXcLUIKDOkY4A1vxS5OevoJ7kUdO2cssz6QQ"}]
